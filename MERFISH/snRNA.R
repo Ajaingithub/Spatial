@@ -1,0 +1,5 @@
+library(SeuratDisk)
+library(Seurat)
+setwd("/diazlab/data3/.abhinav/.immune/spatial/Spatial/MERFISH/analysis/snRNA/")
+Convert("/diazlab/data3/.abhinav/.immune/spatial/rawdata/GSE235863_nine_patients_scRNAseq_cd45_raw_counts.h5ad", dest = "h5seurat", overwrite = TRUE, assay = FALSE)
+obj <- LoadH5Seurat("/diazlab/data3/.abhinav/.immune/spatial/rawdata/GSE235863_nine_patients_scRNAseq_cd45_raw_counts.h5seurat")
